@@ -19,7 +19,9 @@ struct RecipeListView: View {
                     Text("Error: \(error)\nTry again later")
                 } else {
                     List(viewModel.recipes) { recipe in
-                        RecipeRowView(recipe: recipe)
+                        NavigationLink(destination: DetailRecipeView(recipe: recipe)) {
+                            RecipeRowView(recipe: recipe)
+                        }
                     }
                 }
             }
