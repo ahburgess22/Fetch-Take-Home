@@ -18,13 +18,14 @@ struct RecipeListView: View {
                 } else if let error = viewModel.errorMessage {
                     Text("Error: \(error)\nTry again later")
                 } else {
-                    List(viewModel.recipes) { recipe in
+                    List(viewModel.filteredRecipes) { recipe in
                         NavigationLink(destination: DetailRecipeView(recipe: recipe)) {
                             RecipeRowView(recipe: recipe)
                         }
                     }
                 }
             }
+            .searchable(text: $viewModel.searchText, prompt: "Search recipes or cuisine...")
             .refreshable {
                 await viewModel.loadRecipes()
             }

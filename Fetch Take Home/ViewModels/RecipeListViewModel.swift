@@ -13,8 +13,20 @@ class RecipeListViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     @Published var showAlert: Bool = false
+    @Published var searchText: String = ""
     let recipeService = RecipeService()
     private var loadTask: Task<Void, Never>? // Track current task
+    
+    var filteredRecipes: [Recipe] {
+        if searchText.isEmpty {
+            return recipes
+        } else {
+            return recipes.filter { recipe in
+                recipe.name.localizedCaseInsensitiveContains(searchText) ||
+                recipe.cuisine.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
     
     func loadRecipes() async {
         
