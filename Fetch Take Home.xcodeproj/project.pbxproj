@@ -45,11 +45,6 @@
 			path = "Fetch Take HomeTests";
 			sourceTree = "<group>";
 		};
-		D0BA63D22DFBF414005D4912 /* Fetch Take HomeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Fetch Take HomeUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +78,6 @@
 				D0BA64042DFCEEBC005D4912 /* .gitignore */,
 				D0BA63BA2DFBF410005D4912 /* Fetch Take Home */,
 				D0BA63C82DFBF414005D4912 /* Fetch Take HomeTests */,
-				D0BA63D22DFBF414005D4912 /* Fetch Take HomeUITests */,
 				D0BA63B92DFBF410005D4912 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,9 +152,6 @@
 			);
 			dependencies = (
 				D0BA63D12DFBF414005D4912 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D0BA63D22DFBF414005D4912 /* Fetch Take HomeUITests */,
 			);
 			name = "Fetch Take HomeUITests";
 			packageProductDependencies = (
