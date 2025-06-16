@@ -30,5 +30,5 @@ would benefit from more granular error states and recovery options. Additionally
 
 ### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
 The project successfully demonstrates modern iOS development practices including Swift concurrency, SwiftUI navigation, and custom caching without third-party dependencies. I implemented comprehensive unit 
-testing focused on business logic rather than UI, following industry best practices. Given more time, I would add accessibility support, implement more sophisticated loading states, and mess around with various 
+testing focused on business logic rather than UI, following industry best practices. The result successfully balances technical sophistication with focused simplicity, delivering on the assignment's core requirements without over-engineering. Given more time, I would add accessibility support, implement more sophisticated loading states, and mess around with various 
 image cache eviction policies.
