@@ -6,9 +6,12 @@ featuring custom disk-based image caching for optimal performance. Key features 
   <img src="https://github.com/user-attachments/assets/e917150b-785c-4eaf-af43-250053bc73bf" alt="Recipe Detail" width="300">
 </div>
 
+<div align="center">
+  
+[https://github.com/user-attachments/assets/6e0d1cfc-0727-4a91-8761-d7590ca0d1e0](https://github.com/user-attachments/assets/dbf85ba4-187e-499b-80fb-ed5e66741254)
 
-
-[Screen recording showing image caching and search filtering]
+*Demo: Image caching and search functionality*
+</div>
 
 ### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
 I prioritized core functionality and performance over visual polish, focusing on smooth user experience fundamentals. The custom image caching implementation was essential for meeting project requirements while 
